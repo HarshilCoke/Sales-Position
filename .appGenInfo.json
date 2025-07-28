@@ -1,0 +1,33 @@
+{
+  "generationParameters": {
+    "generationDate": "Thu Jul 17 2025 09:32:59 GMT+0000 (Coordinated Universal Time)",
+    "generatorPlatform": "SAP Business Application Studio",
+    "serviceType": "SAP System (ABAP On Premise)",
+    "metadataFilename": "",
+    "serviceUrl": "http://v41.scc.com:443/sap/opu/odata/sap/ZMDG_CH_SALES_POS_SRV",
+    "appName": "zmdg_sales_position",
+    "appTitle": "Sales Position",
+    "appDescription": "An SAP Fiori application.",
+    "appNamespace": "",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.120.25",
+    "enableCodeAssist": false,
+    "enableEslint": false,
+    "enableTypeScript": false,
+    "showMockDataInfo": true,
+    "generatorVersion": "1.18.2",
+    "template": "List Report Page V2",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "SalesPosition"
+      },
+      {
+        "type": "Navigation Entity",
+        "value": "to_MarketId"
+      }
+    ],
+    "launchText": "In order to launch the generated app, simply run the following from the generated app root folder:\n\n```\n    npm start\n```"
+  }
+}

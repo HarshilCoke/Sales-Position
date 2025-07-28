@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=https://sap.github.io/ui5-tooling/schema/ui5.yaml.json
+
+specVersion: "3.1"
+metadata:
+  name: zmdgsalesposition
+type: application
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
+  customTasks:
+    - name: deploy-to-abap
+      afterTask: generateCachebusterInfo
+      configuration:
+        target:
+          destination: V41_010
+          url: http://v41.scc.com:443
+          client: '010'
+        app:
+          name: ZMDG_SALES_POS
+          description: Sales Position Fiori Element Application
+          package: ZMDG_CH_FIORI
+          transport: V41K902975
+        exclude:
+          - /test/
